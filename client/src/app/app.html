@@ -1,0 +1,14 @@
+<div class="card bg-base-100 w-1/2 mx-auto p-10 mt-10 shadow-xl">
+
+    <h3 class="text-3xl text-red-500">{{title}}</h3>
+
+    <ul class="list">
+        @for (item of members(); track item.id) {
+            <li class="list-row items-center">
+                <img src="/avatar.jpeg" alt="user avatar" class="w-10 h-14 rounded-box">
+                <div>{{item.displayName}}</div>
+            </li>
+        }
+    </ul>
+
+</div>
