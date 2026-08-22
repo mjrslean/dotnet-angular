@@ -1,5 +1,5 @@
 import { Component, Input, signal } from '@angular/core';
-import { Register } from "../account/register/register";
+import { Register } from '../account/register/register';
 import { User } from '../../types/user';
 
 @Component({
@@ -9,7 +9,7 @@ import { User } from '../../types/user';
   styleUrl: './home.css',
 })
 export class Home {
-  protected registermode = signal(false);
+  protected registermode = signal(true);
 
   showRegister(value: boolean) {
     this.registermode.set(value);
